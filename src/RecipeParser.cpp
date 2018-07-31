@@ -1,7 +1,14 @@
 
+#include "include\MeasurementUnit.h"
+#include "include\Ingredient.h"
 #include <string>
 
 using namespace std;
+
+
+
+
+
 class Recipe
 {
 public:
@@ -22,34 +29,5 @@ private:
 
 };
 
-class Ingredient
-{
-public:
-    
-    string toString()
-    {
 
-    }
-private:
-    int amount;
-    MeasurementUnit unit;
-    string ingredientName;
-    string rawString; 
-};
 
-enum MeasurementUnit
-{
-    /* No measurement specified or "to taste" or unknown */
-    none,
-    /* whole items*/
-    piece,
-    /* dry ingredient measurements */
-    teaspoon,
-    tablespoon,
-    cup,
-    /* liquid measurements */
-    fluid_ounce,
-    pint,
-    quart,
-    gallon
-};
