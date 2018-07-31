@@ -1,4 +1,5 @@
 #pragma once
+/* This is the enum to specify the measurement unit. If none of them match, then it should be set to none */
 enum MeasurementUnit
 {
     /* No measurement specified or "to taste" or unknown */
