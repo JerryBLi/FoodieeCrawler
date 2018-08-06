@@ -21,11 +21,13 @@
   <ItemGroup>
     <ClCompile Include="..\src\FoodieeCrawler.cpp" />
     <ClCompile Include="..\src\Ingredient.cpp" />
+    <ClCompile Include="..\src\Recipe.cpp" />
     <ClCompile Include="..\src\RecipeParser.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\src\include\Ingredient.h" />
     <ClInclude Include="..\src\include\MeasurementUnit.h" />
+    <ClInclude Include="..\src\include\Recipe.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
