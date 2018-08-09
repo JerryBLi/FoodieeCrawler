@@ -27,6 +27,7 @@
   <ItemGroup>
     <ClInclude Include="..\src\include\Ingredient.h" />
     <ClInclude Include="..\src\include\MeasurementUnit.h" />
+    <ClInclude Include="..\src\include\NutritionalInformation.h" />
     <ClInclude Include="..\src\include\Recipe.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
