@@ -14,9 +14,10 @@ public:
     }
     Recipe(std::string s)
     {
-
+        parseRecipe(s);
     }
   
+    void parseRecipe(std::string s);
 
 private:
     int numberOfIngredients;

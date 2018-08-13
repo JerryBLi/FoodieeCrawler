@@ -22,6 +22,7 @@ public:
     void setAmount(double amount);
     void setUnit(MeasurementUnit unit);
     void setIngredientName(std::string ingredientName);
+    void parseIngredient(std::string s);
 
 private:
     double amount;
