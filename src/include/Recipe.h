@@ -3,6 +3,7 @@
 #include "Ingredient.h"
 #include "NutritionalInformation.h"
 #include <string>
+#include <vector>
 
 /* This is the class representation for a recipe */
 class Recipe
@@ -19,12 +20,37 @@ public:
   
     void parseRecipe(std::string s);
 
+    /* Getters and Setters*/
+    int getNumberOfIngredients();
+    int getNumberOfSteps();
+    double getNumberOfServers();
+    std::string getRecipeName();
+    std::vector<std::string> getRecipeSteps();
+    std::vector<Ingredient> getIngredients();
+
+    void setRecipeName(std::string recipeName);
+    void setRecipeSteps(std::vector<std::string> steps);
+    void setRecipeIngredients(std::vector<Ingredient> ingredients);
+
+    /* Auxillary functions to help create/get recipe */
+    void addRecipeStep(std::string step);
+    void addRecipeIngredient(Ingredient ingredient);
+    void removeRecipeStep(int stepNumber);
+    void removeRecipeIngredient(int ingredientNumber);
+    void clearRecipeSteps();
+    void clearIngredientSteps();
+
+    std::string getRecipeStepAt(int i);
+    Ingredient getRecipeIngredientAt(int i);
+
+
+
 private:
     int numberOfIngredients;
     int numberOfSteps;
     double servings;
     std::string recipeName;
-    std::string *steps;
-    Ingredient *ingredients;
+    std::vector<std::string> steps;
+    std::vector<Ingredient> ingredients;
 
 };
