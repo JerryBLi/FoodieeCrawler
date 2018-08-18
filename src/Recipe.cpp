@@ -1,26 +1,11 @@
 #include "include\Recipe.h"
 #include <iostream>
 #include <fstream>
-#include <sstream>
 
 void Recipe::parseRecipe(std::string s)
 {
     //TODO - find a better place for these hooks
-    std::string recipeTitleHook = "";
-    std::string ingredientHook = "recipeIngredient";
-    std::string recipeStepHook = "recipe-directions__list--item";
-    std::string numServingsHook = "";
 
-    /* Create a string stream so we can go through the HMTL line by line */
-    std::istringstream sstream(s);
-    std::string t;
-
-    /* Get the next line in the string stream */
-    while (std::getline(sstream, t))
-    {
-        /* parse the line and check if there's anything of use */
-        parseLine(t);
-    }
 
 
     std::ofstream out;
@@ -28,7 +13,6 @@ void Recipe::parseRecipe(std::string s)
     out << s;
     out.close();
 }
-
 
 int Recipe::getNumberOfIngredients()
 {
@@ -40,7 +24,7 @@ int Recipe::getNumberOfSteps()
     return 0;
 }
 
-double Recipe::getNumberOfServings()
+double Recipe::getNumberOfServers()
 {
     return 0.0;
 }
@@ -104,10 +88,4 @@ std::string Recipe::getRecipeStepAt(int i)
 Ingredient Recipe::getRecipeIngredientAt(int i)
 {
     return Ingredient();
-}
-
-
-void parseLine(std::string s)
-{
-
 }

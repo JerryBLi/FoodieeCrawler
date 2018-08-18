@@ -23,7 +23,7 @@ public:
     /* Getters and Setters*/
     int getNumberOfIngredients();
     int getNumberOfSteps();
-    double getNumberOfServings();
+    double getNumberOfServers();
     std::string getRecipeName();
     std::vector<std::string> getRecipeSteps();
     std::vector<Ingredient> getIngredients();
