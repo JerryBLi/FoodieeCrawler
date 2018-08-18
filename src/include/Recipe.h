@@ -23,7 +23,7 @@ public:
     /* Getters and Setters*/
     int getNumberOfIngredients();
     int getNumberOfSteps();
-    double getNumberOfServers();
+    double getNumberOfServings();
     std::string getRecipeName();
     std::vector<std::string> getRecipeSteps();
     std::vector<Ingredient> getIngredients();
@@ -53,4 +53,6 @@ private:
     std::vector<std::string> steps;
     std::vector<Ingredient> ingredients;
 
+    /* helper functions */
+    void parseLine(std::string s);
 };
