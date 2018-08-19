@@ -53,6 +53,17 @@ private:
     std::vector<std::string> steps;
     std::vector<Ingredient> ingredients;
 
+    /* helper variables */
+    std::string titleHook;
+    std::string ingredientHook;
+    std::string RecipeStepHook;
+
     /* helper functions */
     void parseLine(std::string s);
+    bool containsTitleHook(std::string s);
+    bool containsIngredientHook(std::string s);
+    bool containsRecipeStepHook(std::string s);
+    void getIngredient(std::string s);
+    void getRecipeStep(std::string s);
+    std::string getValueFromString(std::string s);
 };
